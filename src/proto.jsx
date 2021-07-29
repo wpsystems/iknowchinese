@@ -1,34 +1,57 @@
 import React, { useState } from 'react';
-import { Card, Container, Image, Embed } from 'semantic-ui-react'
+import { Card, Container, Image, Embed, Button, Icon } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import logo from './logo.svg';
-import start from './start.png';
+import logo1_1 from './lesson 1.1 logo.png';
+import logo1_2 from './lesson 1.2 logo.png';
+import logo1_3 from './lesson 1.3 logo.png';
+import cantoneseSong1_1logo from './lesson 1.1 cantonese song logo.png';
+import mandarinSong1_1logo from './lesson 1.1 mandarin song logo.png';
+import cantoneseSong1_3logo from './lesson 1.3 cantonese song logo.png';
+import mandarinSong1_3logo from './lesson 1.3 mandarin song logo.png';
+
+// <iframe width="882" height="496" src="https://www.youtube.com/embed/-5eRva9cKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 const lesson = [
     {
-        image: logo,
-        link: 'http://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
-        header: "Part 1",
-        description: "My description"
+        image: logo1_1,
+        cantoneseSong: "-5eRva9cKxg",
+        cantoneseSongLogo: cantoneseSong1_1logo,
+        mandarinSong: "AO4IGsk4_iY",
+        mandarinSongLogo: mandarinSong1_1logo,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        header: "第 1.1 課",
+        description: "人"
     },
     {
-        image: logo,
-        link: 'http://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
-        header: "Part 2",
-        description: "My description"
+        image: logo1_2,
+        cantoneseSong: "-5eRva9cKxg",
+        cantoneseSongLogo: "./1.1 Cantonese Song Logo.png",
+        mandarinSong: "AO4IGsk4_iY",
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.2.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.2.sb3',
+        header: "第 1.2 課",
+        description: "我"
     },
     {
-        image: logo,
-        link: 'http://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
-        header: "Part 3",
-        description: "My description"
+        image: logo1_3,
+        cantoneseSong: "oPLtoCZBxys",
+        cantoneseSongLogo: cantoneseSong1_3logo,
+        mandarinSong: "AZ0Hn4wyLek",
+        mandarinSongLogo: mandarinSong1_3logo,
+        // link: 'https://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.3.sb3',
+        header: "第 1.3 課",
+        description: "一二三"
     },
 
 ]
 
 const Proto = () => {
 
-    const [play, setPlay] = useState(false);
+    const [playUnit, setPlayUnit] = useState(null);
+    
 
     const Unit = ({unit, key}) => {
         /*
@@ -39,42 +62,42 @@ const Proto = () => {
         */
         return (
         <Card>
-            <Embed
-                    placeholder={start}
-                    
-                    url='http://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3'
-                    iframe={{
-                        allowFullScreen: "true",
-                        allowtransparency: "true",
-                        frameborder: "0",
-                        scrolling:"no",
-                      }}
-                />
-                
             <Card.Content>
                 <Card.Header>{unit.header}</Card.Header>
-                <Card.Meta>Unit {key}</Card.Meta>
                 <Card.Description>
                     {unit.description}
                 </Card.Description>
             </Card.Content>
+            <Image onClick={() => setPlayUnit(unit)} src={unit.image} wrapped ui={false} />
+            <Embed  
+                    id={unit.cantoneseSong}
+                    placeholder={unit.cantoneseSongLogo}
+                    source='youtube'
+                />
+
+            <Embed  
+                    id={unit.mandarinSong}
+                    placeholder={unit.mandarinSongLogo}
+                    source='youtube'
+                />
         </Card>
         )
     }
 
 
 
-    if (play) {
-        /*
-        icon='right circle arrow'
-                    placeholder={logo}
-        */
+    if (playUnit !== null) {
+        
         return (
             <Container>
+                <Button icon onClick={() => setPlayUnit(null)}>
+                    <Icon name='chevron left' />
+                </Button>
                 <Embed
-                    placeholder={start}
+                    placeholder={playUnit.image}
                     
-                    url='http://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/hello.sb3'
+                    // url='https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/hello.sb3'
+                    url={playUnit.link}
                     iframe={{
                         allowFullScreen: "true",
                         allowtransparency: "true",
