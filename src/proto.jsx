@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Container, Image, Embed, Button, Icon } from 'semantic-ui-react'
+import { Card, Container, Image, Header, Embed, Button, Icon } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
 import logo from './logo.svg';
 import logo1_1 from './lesson 1.1 logo.png';
@@ -7,6 +7,8 @@ import logo1_2 from './lesson 1.2 logo.png';
 import logo1_3 from './lesson 1.3 logo.png';
 import cantoneseSong1_1logo from './lesson 1.1 cantonese song logo.png';
 import mandarinSong1_1logo from './lesson 1.1 mandarin song logo.png';
+import cantoneseSong1_2logo from './lesson 1.2 cantonese song logo.png';
+import mandarinSong1_2logo from './lesson 1.2 mandarin song logo.png';
 import cantoneseSong1_3logo from './lesson 1.3 cantonese song logo.png';
 import mandarinSong1_3logo from './lesson 1.3 mandarin song logo.png';
 
@@ -26,9 +28,10 @@ const lesson = [
     },
     {
         image: logo1_2,
-        cantoneseSong: "-5eRva9cKxg",
-        cantoneseSongLogo: "./1.1 Cantonese Song Logo.png",
-        mandarinSong: "AO4IGsk4_iY",
+        cantoneseSong: "Acr5j5lszPM",
+        cantoneseSongLogo: cantoneseSong1_2logo,
+        mandarinSong: "NTiRGxrqj_0",
+        mandarinSongLogo: mandarinSong1_2logo,
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.2.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.2.sb3',
         header: "第 1.2 課",
@@ -69,16 +72,28 @@ const Proto = () => {
                 </Card.Description>
             </Card.Content>
             <Image onClick={() => setPlayUnit(unit)} src={unit.image} wrapped ui={false} />
+            <Header as='h5'>
+                廣東話歌
+            </Header>
             <Embed  
                     id={unit.cantoneseSong}
                     placeholder={unit.cantoneseSongLogo}
                     source='youtube'
+                    iframe={{
+                        allowFullScreen: "true",
+                      }}
                 />
 
+            <Header as='h5'>
+                普通話歌
+            </Header>
             <Embed  
                     id={unit.mandarinSong}
                     placeholder={unit.mandarinSongLogo}
                     source='youtube'
+                    iframe={{
+                        allowFullScreen: "true",
+                      }}
                 />
         </Card>
         )
@@ -108,11 +123,18 @@ const Proto = () => {
             </Container>
         )
     }
-    
+
+
     
     
     return (
         <Container>
+            <Container textAlign='right'>
+                <Button onClick={() => window.open('https://dev.d6t1v0dpbupz4.amplifyapp.com')}>
+                    溫習課本App
+                </Button>
+            </Container>
+            
             <Card.Group stackable={true}>
                 {lesson.map((unit, index) => <Unit key={index} unit={unit}/>)}
             </Card.Group>
