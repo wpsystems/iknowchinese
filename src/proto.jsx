@@ -5,7 +5,9 @@ import logo from './logo.svg';
 import logo1_1 from './lesson 1.1 logo.png';
 import logo1_2 from './lesson 1.2 logo.png';
 import logo1_3 from './lesson 1.3 logo.png';
-import logo2 from './lesson 2 logo.png';
+import logo2_1 from './lesson 2.1 logo.png';
+import logo2_2 from './lesson 2.2 logo.png';
+import logo2_3 from './lesson 2.3 logo.png';
 import cantoneseSong1_1logo from './lesson 1.1 cantonese song logo.png';
 import mandarinSong1_1logo from './lesson 1.1 mandarin song logo.png';
 import cantoneseSong1_2logo from './lesson 1.2 cantonese song logo.png';
@@ -53,15 +55,33 @@ const lesson = [
     },
 
     {
-        image: logo2,
+        image: logo2_1,
         cantoneseSong: "r_7wVggjGuk",
         cantoneseSongLogo: cantoneseSong2logo,
         mandarinSong: "uuMpYwwFzR8",
         mandarinSongLogo: mandarinSong2logo,
         // link: 'https://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
-        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson2.sb3',
-        header: "第 2 課",
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson2.1.sb3',
+        header: "第 2.1 課",
         description: "上下"
+    },
+
+    {
+        image: logo2_2,
+        
+        // link: 'https://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson2.2.sb3',
+        header: "第 2.2 課",
+        description: "上下 車，飛機，船"
+    },
+
+    {
+        image: logo2_3,
+        
+        // link: 'https://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson2.3.sb3',
+        header: "第 2.3 課",
+        description: "上下 課，學；早上，上下午，上海，..."
     },
 
 ]
@@ -85,8 +105,13 @@ const Proto = () => {
                 <Card.Description>
                     {unit.description}
                 </Card.Description>
+                <Image onClick={() => setPlayUnit(unit)} src={unit.image} wrapped ui={true}/>
             </Card.Content>
-            <Image onClick={() => setPlayUnit(unit)} src={unit.image} wrapped ui={false} />
+            
+            {
+                typeof unit.cantoneseSong !== 'undefined' &&
+            <>
+            
             <Header as='h5'>
                 廣東話歌
             </Header>
@@ -98,6 +123,12 @@ const Proto = () => {
                         allowFullScreen: "true",
                       }}
                 />
+            </>
+            }
+
+            {
+                typeof unit.mandarinSong !== 'undefined' &&
+            <>
 
             <Header as='h5'>
                 普通話歌
@@ -110,6 +141,8 @@ const Proto = () => {
                         allowFullScreen: "true",
                       }}
                 />
+            </>
+            }
         </Card>
         )
     }
