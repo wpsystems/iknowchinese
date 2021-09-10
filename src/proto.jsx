@@ -58,7 +58,7 @@ const lesson = [
         image: logo2_1,
         cantoneseSong: "r_7wVggjGuk",
         cantoneseSongLogo: cantoneseSong2logo,
-        mandarinSong: "uuMpYwwFzR8",
+        mandarinSong: "76K1142zPao",
         mandarinSongLogo: mandarinSong2logo,
         // link: 'https://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson2.1.sb3',
