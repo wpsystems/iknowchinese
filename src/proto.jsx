@@ -8,6 +8,7 @@ import logo1_3 from './lesson 1.3 logo.png';
 import logo2_1 from './lesson 2.1 logo.png';
 import logo2_2 from './lesson 2.2 logo.png';
 import logo2_3 from './lesson 2.3 logo.png';
+import logo3_1 from './lesson 3.1 logo.png';
 import cantoneseSong1_1logo from './lesson 1.1 cantonese song logo.png';
 import mandarinSong1_1logo from './lesson 1.1 mandarin song logo.png';
 import cantoneseSong1_2logo from './lesson 1.2 cantonese song logo.png';
@@ -16,6 +17,8 @@ import cantoneseSong1_3logo from './lesson 1.3 cantonese song logo.png';
 import mandarinSong1_3logo from './lesson 1.3 mandarin song logo.png';
 import cantoneseSong2logo from './lesson 2 cantonese song logo.png';
 import mandarinSong2logo from './lesson 2 mandarin song logo.png';
+import cantoneseSong3_1logo from './lesson 3.1 cantonese song logo.png';
+import mandarinSong3_1logo from './lesson 3.1 mandarin song logo.png';
 
 // <iframe width="882" height="496" src="https://www.youtube.com/embed/-5eRva9cKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -82,6 +85,19 @@ const lesson = [
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson2.3.sb3',
         header: "第 2.3 課",
         description: "上下 課，學；早上，上下午，上海，..."
+    },
+
+    {
+        image: logo3_1,
+        
+        // link: 'https://wpsystems.xyz:12000/embed.html?project_url=wpsystems.github.io/scratch/hello.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson3.1.sb3',
+        header: "第 3.1 課",
+        description: "中，中國，中文",
+        cantoneseSong: "GEXGHCU5BDg",
+        cantoneseSongLogo: cantoneseSong3_1logo,
+        mandarinSong: "dZUVGtSouCc",
+        mandarinSongLogo: mandarinSong3_1logo,
     },
 
 ]
