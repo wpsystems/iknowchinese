@@ -19,10 +19,18 @@ import cantoneseSong2logo from './lesson 2 cantonese song logo.png';
 import mandarinSong2logo from './lesson 2 mandarin song logo.png';
 import cantoneseSong3_1logo from './lesson 3.1 cantonese song logo.png';
 import mandarinSong3_1logo from './lesson 3.1 mandarin song logo.png';
+import logotccsa1_1 from './tccsa1.1logo.png';
 
 // <iframe width="882" height="496" src="https://www.youtube.com/embed/-5eRva9cKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 const lesson = [
+    {
+        image: logotccsa1_1,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa1.1.sb3',
+        header: "多華會 第 1.1 課",
+        description: ""
+    },
     {
         image: logo1_1,
         cantoneseSong: "-5eRva9cKxg",
