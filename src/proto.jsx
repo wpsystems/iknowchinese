@@ -21,12 +21,18 @@ import cantoneseSong3_1logo from './lesson 3.1 cantonese song logo.png';
 import mandarinSong3_1logo from './lesson 3.1 mandarin song logo.png';
 import logotccsa1_1 from './tccsa1.1logo.png';
 import logotccsa1_2 from './tccsa1.2logo.png';
+import logotccsa1_3 from './tccsa1.3logo.png';
+import cantoneseSongtccsa1_1logo from './cantoneseSongtccsa1_1logo.png';
+import cantoneseSongtccsa1_2logo from './cantoneseSongtccsa1_2logo.png';
+import cantoneseSongtccsa1_3logo from './cantoneseSongtccsa1_3logo.png';
 
 // <iframe width="882" height="496" src="https://www.youtube.com/embed/-5eRva9cKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 const lesson = [
     {
         image: logotccsa1_1,
+        cantoneseSong: "H6qLfGuxB5U",
+        cantoneseSongLogo: cantoneseSongtccsa1_1logo,
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa1.1.sb3',
         header: "多華會 第 1.1 課",
@@ -34,9 +40,20 @@ const lesson = [
     },
     {
         image: logotccsa1_2,
+        cantoneseSong: "2jPMAqvxr1c",
+        cantoneseSongLogo: cantoneseSongtccsa1_2logo,
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa1.2.sb3',
         header: "多華會 第 1.2 課",
+        description: ""
+    },
+    {
+        image: logotccsa1_3,
+        cantoneseSong: "oDJ0hQ4fYQc",
+        cantoneseSongLogo: cantoneseSongtccsa1_3logo,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa1.3.sb3',
+        header: "多華會 第 1.3 課",
         description: ""
     },
     {
@@ -145,7 +162,7 @@ const Proto = () => {
             <>
             
             <Header as='h5'>
-                廣東話歌
+                
             </Header>
             <Embed  
                     id={unit.cantoneseSong}
@@ -163,7 +180,7 @@ const Proto = () => {
             <>
 
             <Header as='h5'>
-                普通話歌
+                
             </Header>
             <Embed  
                     id={unit.mandarinSong}
