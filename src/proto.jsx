@@ -22,6 +22,8 @@ import mandarinSong3_1logo from './lesson 3.1 mandarin song logo.png';
 import logotccsa1_1 from './tccsa1.1logo.png';
 import logotccsa1_2 from './tccsa1.2logo.png';
 import logotccsa1_3 from './tccsa1.3logo.png';
+import logotccsa3_1 from './tccsa3.1logo.png';
+import logotccsa3_2 from './tccsa3.2logo.png';
 import logotccsaCalendar from './tccsaCalendarlogo.png';
 import logotccsaSignin from './tccsaSigninlogo.png';
 import cantoneseSongtccsa1_1logo from './cantoneseSongtccsa1_1logo.png';
@@ -70,6 +72,24 @@ const lesson = [
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa2.2.sb3',
         header: "多華會 TCCSA Lesson 2.2",
+        description: ""
+    },
+    {
+        image: logotccsa3_1,
+        // cantoneseSong: "2jPMAqvxr1c",
+        // cantoneseSongLogo: cantoneseSongtccsa1_2logo,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa3.1.sb3',
+        header: "多華會 TCCSA Lesson 3.1",
+        description: ""
+    },
+    {
+        image: logotccsa3_2,
+        // cantoneseSong: "oDJ0hQ4fYQc",
+        // cantoneseSongLogo: cantoneseSongtccsa1_3logo,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa3.2.sb3',
+        header: "多華會 TCCSA Lesson 3.2",
         description: ""
     },
     {
