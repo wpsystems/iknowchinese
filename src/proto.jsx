@@ -92,6 +92,7 @@ const lesson = [
         header: "多華會 TCCSA Lesson 3.2",
         description: ""
     },
+    /*
     {
         image: logo1_1,
         cantoneseSong: "-5eRva9cKxg",
@@ -168,6 +169,7 @@ const lesson = [
         mandarinSong: "dZUVGtSouCc",
         mandarinSongLogo: mandarinSong3_1logo,
     },
+    */
 
 ]
 
