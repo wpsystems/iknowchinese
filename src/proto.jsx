@@ -24,11 +24,14 @@ import logotccsa1_2 from './tccsa1.2logo.png';
 import logotccsa1_3 from './tccsa1.3logo.png';
 import logotccsa3_1 from './tccsa3.1logo.png';
 import logotccsa3_2 from './tccsa3.2logo.png';
+import logotccsa4_1 from './tccsa4.1logo.png';
+import logotccsa4_2 from './tccsa4.2logo.png';
 import logotccsaCalendar from './tccsaCalendarlogo.png';
 import logotccsaSignin from './tccsaSigninlogo.png';
 import cantoneseSongtccsa1_1logo from './cantoneseSongtccsa1_1logo.png';
 import cantoneseSongtccsa1_2logo from './cantoneseSongtccsa1_2logo.png';
 import cantoneseSongtccsa1_3logo from './cantoneseSongtccsa1_3logo.png';
+import cantoneseSongtccsa4_1logo from './cantoneseSongtccsa4_1logo.png';
 
 // <iframe width="882" height="496" src="https://www.youtube.com/embed/-5eRva9cKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -90,6 +93,23 @@ const lesson = [
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa3.2.sb3',
         header: "多華會 TCCSA Lesson 3.2",
+        description: ""
+    },
+    {
+        image: logotccsa4_1,
+        cantoneseSong: "C2nYuWDerCA",
+        cantoneseSongLogo: cantoneseSongtccsa4_1logo,
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa4.1.sb3',
+        header: "多華會 TCCSA Lesson 4.1",
+        description: ""
+    },
+    {
+        image: logotccsa4_2,
+        // cantoneseSong: "oDJ0hQ4fYQc",
+        // cantoneseSongLogo: cantoneseSongtccsa1_3logo,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa4.2.sb3',
+        header: "多華會 TCCSA Lesson 4.2",
         description: ""
     },
     /*
