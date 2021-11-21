@@ -31,6 +31,7 @@ import logotccsa5_2 from './tccsa5.2logo.png';
 import logotccsa6_1 from './tccsa6.1logo.png';
 import logotccsa6_2 from './tccsa6.2logo.png';
 import logotccsa7_1 from './tccsa7.1logo.png';
+import logotccsa7_2 from './tccsa7.2logo.png';
 import logotccsaCalendar from './tccsaCalendarlogo.png';
 import logotccsaSignin from './tccsaSigninlogo.png';
 import cantoneseSongtccsa1_1logo from './cantoneseSongtccsa1_1logo.png';
@@ -160,6 +161,13 @@ const lesson = [
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa7.1.sb3',
         header: "多華會 TCCSA Lesson 7.1",
+        description: ""
+    },
+    {
+        image: logotccsa7_2,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa7.2.sb3',
+        header: "多華會 TCCSA Lesson 7.2",
         description: ""
     },
     
