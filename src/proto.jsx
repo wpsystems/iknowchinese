@@ -36,6 +36,7 @@ import logotccsa8_1 from './tccsa8.1logo.png';
 import logotccsa8_2 from './tccsa8.2logo.png';
 import logotccsa9_1 from './tccsa9.1logo.png';
 import logotccsa9_2 from './tccsa9.2logo.png';
+import logotccsa10_1 from './tccsa10.1logo.png';
 import logotccsaCalendar from './tccsaCalendarlogo.png';
 import logotccsaSignin from './tccsaSigninlogo.png';
 import cantoneseSongtccsa1_1logo from './cantoneseSongtccsa1_1logo.png';
@@ -47,6 +48,7 @@ import cantoneseSongtccsa6_2logo from './cantoneseSongtccsa6_2logo.png';
 import cantoneseSongtccsa8_2logo from './cantoneseSongtccsa8_2logo.png';
 import cantoneseSongtccsa9_1logo from './cantoneseSongtccsa9_1logo.png';
 import cantoneseSongtccsa9_2logo from './cantoneseSongtccsa9_2logo.png';
+import cantoneseSongtccsa10_1logo from './cantoneseSongtccsa10_1logo.png';
 
 // <iframe width="882" height="496" src="https://www.youtube.com/embed/-5eRva9cKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -209,6 +211,15 @@ const lesson = [
         cantoneseSong: "fhMEkgGJqlo",
         cantoneseSongLogo: cantoneseSongtccsa9_1logo,
         header: "多華會 TCCSA Lesson 9.2",
+        description: ""
+    },
+    {
+        image: logotccsa10_1,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa10.1.sb3',
+        cantoneseSong: "hF1XPepXHZQ",
+        cantoneseSongLogo: cantoneseSongtccsa10_1logo,
+        header: "多華會 TCCSA Lesson 10.1",
         description: ""
     },
     
