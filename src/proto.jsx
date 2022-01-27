@@ -250,8 +250,6 @@ const lesson = [
         image: logotccsa12_2,
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa12.2.sb3',
-        cantoneseSong: "c_J-UBpVM2Y",
-        cantoneseSongLogo: cantoneseSongtccsa12_2logo,
         header: "多華會 TCCSA Lesson 12.2",
         description: ""
     },
@@ -269,8 +267,10 @@ const lesson = [
         image: logotccsa13_2,
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa13.2.sb3',
-        cantoneseSong: "mQ4EbuOV2gY",
+        cantoneseSong: "2umseacMVig",
         cantoneseSongLogo: cantoneseSongtccsa13_2logo,
+        mandarinSong: "_bgkB2XEFts",
+        mandarinSongLogo: cantoneseSongtccsa12_2logo,
         header: "多華會 TCCSA Lesson 13.2",
         description: ""
     },
