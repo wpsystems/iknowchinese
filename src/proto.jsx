@@ -75,6 +75,8 @@ import cantoneseSongtccsa17_1logo from './cantoneseSongtccsa17_1logo.png';
 import cantoneseSongtccsa18_1logo from './cantoneseSongtccsa18_1logo.png';
 import cantoneseSongtccsa18_2logo from './cantoneseSongtccsa18_2logo.png';
 import cantoneseSongtccsa18_3logo from './cantoneseSongtccsa18_3logo.png';
+import cantoneseSongtccsa20_1logo from './cantoneseSongtccsa20_1logo.png';
+import cantoneseSongtccsa20_2logo from './cantoneseSongtccsa20_2logo.png';
 
 // <iframe width="882" height="496" src="https://www.youtube.com/embed/-5eRva9cKxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -389,6 +391,17 @@ const lesson = [
         // cantoneseSong: "7aJufvl-hAA",
         // cantoneseSongLogo: cantoneseSongtccsa18_2logo,
         header: "多華會 TCCSA Lesson 19.2",
+        description: ""
+    },
+    {
+        // image: logotccsa20_1,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        // link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsa19.2.sb3',
+        cantoneseSong: "y8_8gwEoAfw",
+        cantoneseSongLogo: cantoneseSongtccsa20_1logo,
+        mandarinSong: "-7ETNE--xro",
+        mandarinSongLogo: cantoneseSongtccsa20_2logo,
+        header: "多華會 母親節快樂",
         description: ""
     },
     
