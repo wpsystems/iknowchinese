@@ -9,6 +9,7 @@ import logo2_1 from './lesson 2.1 logo.png';
 import logo2_2 from './lesson 2.2 logo.png';
 import logo2_3 from './lesson 2.3 logo.png';
 import logo3_1 from './lesson 3.1 logo.png';
+import logolevel0 from './level0 logo.png';
 import cantoneseSong1_1logo from './lesson 1.1 cantonese song logo.png';
 import mandarinSong1_1logo from './lesson 1.1 mandarin song logo.png';
 import cantoneseSong1_2logo from './lesson 1.2 cantonese song logo.png';
@@ -82,6 +83,13 @@ import cantoneseSongtccsa20_2logo from './cantoneseSongtccsa20_2logo.png';
 
 const lesson = [
     {
+        image: logolevel0,
+        // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
+        link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/chinese/level 0/level0.sb3',
+        header: "Level 0",
+        description: ""
+    },
+    {
         image: logotccsaSignin,
         // link: 'https://wpsystems.xyz:12000/embed.html?autoplay&project_url=wpsystems.github.io/scratch/lesson1.1.sb3',
         link: 'https://wpsystems.github.io/scratch-gui/build/embed.html?autoplay&project_url=wpsystems.github.io/scratch/tccsaSignin.sb3',
@@ -102,6 +110,7 @@ const lesson = [
         header: "多華會 TCCSA 21點",
         description: ""
     },
+    
     {
         image: logotccsa1_1,
         cantoneseSong: "H6qLfGuxB5U",
